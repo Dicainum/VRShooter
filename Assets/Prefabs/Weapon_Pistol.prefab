@@ -195,6 +195,8 @@ GameObject:
   - component: {fileID: 3914698834368287045}
   - component: {fileID: 1422088333016570530}
   - component: {fileID: 4664391571407043648}
+  - component: {fileID: 1177174695679971625}
+  - component: {fileID: 5491108370085041794}
   m_Layer: 0
   m_Name: Weapon_Pistol
   m_TagString: Untagged
@@ -544,6 +546,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: VRTraining.Gameplay::VRTraining.Gameplay.Weapons.XRWeaponTrigger
   _fireLeft: {fileID: -3583927532505765980, guid: e0ea9c9e45041d04e97b3a958baf4b8c, type: 3}
   _fireRight: {fileID: -3932191466693497648, guid: e0ea9c9e45041d04e97b3a958baf4b8c, type: 3}
+--- !u!114 &1177174695679971625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4622784089071105514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa298a10ca0961343b136f953d358005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: VRTraining.Gameplay::VRTraining.Gameplay.Interaction.ScenarioTarget
+  _targetId: Weapon_Pistol
+--- !u!114 &5491108370085041794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4622784089071105514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d1376bad9a8a845b64118eed6b6efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: VRTraining.Gameplay::VRTraining.Gameplay.Interaction.GrabActionReporter
 --- !u!1 &7165014110043814197
 GameObject:
   m_ObjectHideFlags: 0

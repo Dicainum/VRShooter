@@ -1,14 +1,8 @@
 {
-    "name": "VRTraining.Gameplay",
-    "rootNamespace": "VRTraining.Gameplay",
+    "name": "VRTraining.App",
+    "rootNamespace": "VRTraining.App",
     "references": [
-        "VRTraining.Core",
-        "VRTraining.Scenario",
-        "Unity.InputSystem",
-        "Unity.XR.Interaction.Toolkit",
-        "Unity.XR.Management",
-        "Unity.XR.CoreUtils",
-        "UnityEngine.UI"
+        "VRTraining.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

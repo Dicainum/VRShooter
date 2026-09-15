@@ -1,0 +1,78 @@
+{
+  "ScenarioId": "combat_training_01",
+  "ScenarioName": "Огневая подготовка и смена оружия",
+  "Groups": [
+    {
+      "GroupId": 1,
+      "GroupName": "Базовая подготовка",
+      "Steps": [
+        {
+          "id": 1,
+          "description": "Подойти к огневой точке",
+          "expectedAction": "Approach",
+          "target": "Zone_ShootingPoint"
+        },
+        {
+          "id": 2,
+          "description": "Взять пистолет со стола",
+          "expectedAction": "Grab",
+          "target": "Weapon_Pistol"
+        },
+        {
+          "id": 3,
+          "description": "Уничтожить желтый манекен",
+          "expectedAction": "Shoot",
+          "target": "Target_Dummy"
+        }
+      ]
+    },
+    {
+      "GroupId": 2,
+      "GroupName": "Боевой контакт",
+      "Steps": [
+        {
+          "id": 4,
+          "description": "Выбросить пистолет",
+          "expectedAction": "Drop",
+          "target": "Weapon_Pistol"
+        },
+        {
+          "id": 5,
+          "description": "Взять автомат",
+          "expectedAction": "Grab",
+          "target": "Weapon_AssaultRifle"
+        },
+        {
+          "id": 6,
+          "description": "Уничтожить красный манекен",
+          "expectedAction": "Shoot",
+          "target": "Target_Mob"
+        }
+      ]
+    },
+    {
+      "GroupId": 3,
+      "GroupName": "Завершение сценария",
+      "Steps": [
+        {
+          "id": 7,
+          "description": "Подойти к терминалу результатов",
+          "expectedAction": "Approach",
+          "target": "Zone_Terminal"
+        },
+        {
+          "id": 8,
+          "description": "Активировать терминал",
+          "expectedAction": "PressUi",
+          "target": "UI_Button_Activate"
+        },
+        {
+          "id": 9,
+          "description": "Нажать кнопку подтверждения",
+          "expectedAction": "PressUi",
+          "target": "UI_Button_Finish"
+        }
+      ]
+    }
+  ]
+}

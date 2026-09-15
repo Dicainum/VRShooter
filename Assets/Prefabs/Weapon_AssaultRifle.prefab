@@ -347,6 +347,8 @@ GameObject:
   - component: {fileID: 4828236731006387048}
   - component: {fileID: 3441621824326418227}
   - component: {fileID: 6575271208168291344}
+  - component: {fileID: 8414044691636092206}
+  - component: {fileID: 5637861556524586196}
   m_Layer: 0
   m_Name: Weapon_AssaultRifle
   m_TagString: Untagged
@@ -698,6 +700,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: VRTraining.Gameplay::VRTraining.Gameplay.Weapons.XRWeaponTrigger
   _fireLeft: {fileID: -3583927532505765980, guid: e0ea9c9e45041d04e97b3a958baf4b8c, type: 3}
   _fireRight: {fileID: -3932191466693497648, guid: e0ea9c9e45041d04e97b3a958baf4b8c, type: 3}
+--- !u!114 &8414044691636092206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7931741940329956274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa298a10ca0961343b136f953d358005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: VRTraining.Gameplay::VRTraining.Gameplay.Interaction.ScenarioTarget
+  _targetId: Weapon_AssaultRifle
+--- !u!114 &5637861556524586196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7931741940329956274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d1376bad9a8a845b64118eed6b6efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: VRTraining.Gameplay::VRTraining.Gameplay.Interaction.GrabActionReporter
 --- !u!1 &8600602575790387036
 GameObject:
   m_ObjectHideFlags: 0

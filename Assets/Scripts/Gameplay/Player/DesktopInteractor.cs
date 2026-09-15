@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using VRTraining.Gameplay.Interaction;
 using VRTraining.Gameplay.Weapons;
 
 namespace VRTraining.Gameplay.Player
@@ -28,6 +29,7 @@ namespace VRTraining.Gameplay.Player
         private GameObject _held;
         private Rigidbody _heldBody;
         private Weapon _heldWeapon;
+        private GrabActionReporter _heldReporter;
         private RigidbodyInterpolation _heldBodyInterpolation;
         private CollisionDetectionMode _heldBodyCollisionDetection;
 
@@ -154,6 +156,7 @@ namespace VRTraining.Gameplay.Player
             _held = grabbable.gameObject;
             _heldWeapon = _held.GetComponent<Weapon>();
             _heldBody = _held.GetComponent<Rigidbody>();
+            _heldReporter = _held.GetComponent<GrabActionReporter>();
 
             if (_heldBody != null)
             {
@@ -173,6 +176,11 @@ namespace VRTraining.Gameplay.Player
 
             _held.transform.SetParent(_holdAnchor, false);
             _held.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
+
+            if (_heldReporter != null)
+            {
+                _heldReporter.ReportGrab();
+            }
         }
 
         public void Drop()
@@ -192,9 +200,15 @@ namespace VRTraining.Gameplay.Player
                 _heldBody.interpolation = _heldBodyInterpolation;
             }
 
+            if (_heldReporter != null)
+            {
+                _heldReporter.ReportDrop();
+            }
+
             _held = null;
             _heldBody = null;
             _heldWeapon = null;
+            _heldReporter = null;
         }
 
         private static bool IsPressed(InputActionReference reference)

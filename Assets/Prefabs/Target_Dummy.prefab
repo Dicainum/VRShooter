@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3063953241300965816}
   - component: {fileID: 3744437285987553137}
   - component: {fileID: 7730709810489540629}
+  - component: {fileID: 8993684646683782370}
+  - component: {fileID: 7919827295281983287}
   m_Layer: 0
   m_Name: Target_Dummy
   m_TagString: Untagged
@@ -73,6 +75,31 @@ MonoBehaviour:
   _maxHealth: 100
   _fallSeconds: 0.45
   _deadColor: {r: 0.25, g: 0.25, b: 0.28, a: 1}
+--- !u!114 &8993684646683782370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891288545258281626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa298a10ca0961343b136f953d358005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: VRTraining.Gameplay::VRTraining.Gameplay.Interaction.ScenarioTarget
+  _targetId: Target_Dummy
+--- !u!114 &7919827295281983287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891288545258281626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b959fe79a91b91428b234a283e6e28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: VRTraining.Gameplay::VRTraining.Gameplay.Interaction.ShootActionReporter
 --- !u!1 &1722604458624614826
 GameObject:
   m_ObjectHideFlags: 0

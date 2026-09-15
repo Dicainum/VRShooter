@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -16,6 +17,9 @@ namespace VRTraining.Gameplay.Weapons
 
         private float _health;
         private Renderer[] _renderers;
+
+        // Через событие о смерти узнает сценарий, сама мишень про него не знает
+        public event Action Died;
 
         public bool IsAlive => _health > 0f;
 
@@ -40,6 +44,7 @@ namespace VRTraining.Gameplay.Weapons
 
             _health = 0f;
             Die();
+            Died?.Invoke();
         }
 
         private void Die()
