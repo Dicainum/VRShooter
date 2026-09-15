@@ -4,11 +4,9 @@
 Работает и в шлеме, и с клавиатуры с мышью, риг выбирается сам
 
 ## Видео
-
-- [PC геймплей](Videos/PCGameplay.mp4)
-- [VR геймплей](Videos/VRGameplay.mp4)
-- [Прохождение не по сценарию](Videos/FailedAttempted.mp4), видно как ломается порядок шагов и что после
-  этого показывают итоги
+| PC геймплей | VR геймплей | Прохождение не по сценарию |
+|---|---|---|
+| [![PC геймплей](https://img.youtube.com/vi/XYZyqtBwXDs/hqdefault.jpg)](https://www.youtube.com/watch?v=XYZyqtBwXDs) | [![VR геймплей](https://img.youtube.com/vi/xQrim3l8FcU/hqdefault.jpg)](https://www.youtube.com/shorts/xQrim3l8FcU) | [![Прохождение не по сценарию](https://img.youtube.com/vi/LHbP2WQWlm0/hqdefault.jpg)](https://www.youtube.com/watch?v=LHbP2WQWlm0) |
 
 ## Запуск
 
